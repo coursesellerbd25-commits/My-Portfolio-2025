@@ -39,13 +39,11 @@ footer {
     width: 100%;
     bottom: 0;
 }
-footer .container {
-    border: none;
-}
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 header img {
     width: 250px;
@@ -55,7 +53,42 @@ header img {
 }
 div {
     margin: 20px 0;
-    border: 2px solid #ccc;
+}
+.container8 {
+    padding-top: 330px;
+}
+#about-carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 40px auto;
+}
+#about-carousel .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+#about-carousel section {
+    min-width: 100%;
+    flex-shrink: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#about-carousel .prev-btn, #about-carousel .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1111117b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#about-carousel .prev-btn { 
+    left: 10px;
+}
+#about-carousel .next-btn {
+    right: 10px
 }
 #about {
     height: 530px;
@@ -65,9 +98,6 @@ div {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
-}
-#about .container1{
-    border: none;
 }
 #contact form {
     display: flex;
@@ -84,7 +114,6 @@ div {
     padding: 10px;
     background-color: #333;
     color: white;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
@@ -110,7 +139,6 @@ header {
 }
 .header-text {
     text-align: left;
-    border: none;
 }
 header .btn {
     margin-top: 15px;
@@ -120,43 +148,71 @@ header .btn {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    border: none;
     height: 76%;
 }
 #why-me {
     text-align: left;
 }
 #why-me .container {
-    border: none;
     left: 139px;
     position: relative;
     top: 34px;
     line-height: 41px;
 }
-#projects .container, .project{
-    border: none;
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.project {
+    min-width: 100%;
+    flex-shrink: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 #projects .container {
-    display: flex;
+    padding: 97px 0 97px 0;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1111117b;
+    color: rgb(255, 255, 255);
+    padding: 17px 22px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev-btn {
+    left: 10px;
+}
+.next-btn {
+    right: 10px;
+}
+.prev-btn i, .next-btn i{
+    font-size: 37px;
+}
+.prev-btn i:hover, .next-btn i:hover{
+    color: rgb(179, 170, 170);
 }
 #code i {
     font-size: 70px;
     cursor: pointer;
 }
 #code .container{
-    border: none;
     gap: 27px;
     display: flex;
     padding: 24px;
 }
 .container3 {
     display: flex;
-    border: none;
 }
 #code .container2{
     right: -461px;
     position: relative;
-    border: none;
     width: 548px;
 }
 #code i:hover {
@@ -170,7 +226,6 @@ header .btn {
     width: 628px;
     left: 160px;
     position: relative;
-    border: none;
     padding-top: 28px;
 }
 #tech .container i{
@@ -188,7 +243,6 @@ header .btn {
 }
 .container5 {
     display: flex;
-    border: none;
 }
 #soft-skills {
     left: 316px;
@@ -197,28 +251,20 @@ header .btn {
 #soft-skills .container {
     width: 317px;
     text-align: left;
-    border: none;
     line-height: 29px;
     font-size: 24px;
 }
-#contact .container{
-    border: none;
-}
-.container6 {
-    display: flex;
-    border: none;
-}
+
 #connect .container {
     left: 179px;
     position: relative;
-    border: none;
     width: 297px;
 }
 #download-cv .container {
-    left: 789px;
+    right: 496px;
     position: relative;
-    border: none;
-    width: 195px;
+    width: 197px;
+    bottom: 147px;
 }
 #connect .container a{
     display: inline-block;
@@ -231,16 +277,11 @@ header .btn {
 #connect a:hover {
     transform: scale(1.2);
 }
-#getConnected {
-    border: none;
-}
 #edu .container{
-    border: none;
     padding-top: 88px;
 }
 #edu .carousel {
     display: flex;
-    border: none;
 }
 #tools i {
     display: inline-block;
@@ -251,7 +292,6 @@ header .btn {
     transition: transform 0.5s ease-in-out;
 }
 #tools .container {
-    border: none;
     width: 240px;
     left: 698px;
     position: relative;
@@ -260,17 +300,12 @@ header .btn {
 #languages .container{
     width: 143px;
     text-align: left;
-    border: none;
     line-height: 24px;
     left: 433px;
     position: relative;
 }
 .container7 {
     display: flex;
-    border: none;
-}
-#certiAchiev .container {
-    border: none;
 }
 .fa-html5:hover{
     color: rgb(223, 76, 36);
