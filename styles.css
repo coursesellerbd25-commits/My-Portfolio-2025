@@ -2,6 +2,365 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     text-align: center;
+}
+nav {
+    background-color: #837777;
+    color: #ffffff00;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    transition: text-decoration 1s ease-in-out;
+}
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+footer .container {
+    border: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+div {
+    margin: 20px 0;
+    border: 2px solid #ccc;
+}
+#about {
+    height: 530px;
+    padding: 155px;
+}
+#projects, #contact {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+#about .container1{
+    border: none;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+#contact input, #contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact button {
+    margin: 5px 500px 5px 500px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#contact button:hover {
+    background-color: #555;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #555;
+}
+header {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+.header-text {
+    text-align: left;
+    border: none;
+}
+header .btn {
+    margin-top: 15px;
+}
+.container0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border: none;
+    height: 76%;
+}
+#why-me {
+    text-align: left;
+}
+#why-me .container {
+    border: none;
+    left: 139px;
+    position: relative;
+    top: 34px;
+    line-height: 41px;
+}
+#projects .container, .project{
+    border: none;
+}
+#projects .container {
+    display: flex;
+}
+#code i {
+    font-size: 70px;
+    cursor: pointer;
+}
+#code .container{
+    border: none;
+    gap: 27px;
+    display: flex;
+    padding: 24px;
+}
+.container3 {
+    display: flex;
+    border: none;
+}
+#code .container2{
+    right: -461px;
+    position: relative;
+    border: none;
+    width: 548px;
+}
+#code i:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+#tech {
+    padding: 0px;
+}
+#tech .container {
+    width: 628px;
+    left: 160px;
+    position: relative;
+    border: none;
+    padding-top: 28px;
+}
+#tech .container i{
+    font-size: 70px;
+    cursor: pointer;
+}
+#tech .container4 {
+    gap: 17px;
+    display: flex;
+    border: none;
+}
+#tech i:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.container5 {
+    display: flex;
+    border: none;
+}
+#soft-skills {
+    left: 316px;
+    position: relative;
+}
+#soft-skills .container {
+    width: 317px;
+    text-align: left;
+    border: none;
+    line-height: 29px;
+    font-size: 24px;
+}
+#contact .container{
+    border: none;
+}
+.container6 {
+    display: flex;
+    border: none;
+}
+#connect .container {
+    left: 179px;
+    position: relative;
+    border: none;
+    width: 297px;
+}
+#download-cv .container {
+    left: 789px;
+    position: relative;
+    border: none;
+    width: 195px;
+}
+#connect .container a{
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+#connect .container i {
+    font-size: 70px;
+    color: black;
+}
+#connect a:hover {
+    transform: scale(1.2);
+}
+#getConnected {
+    border: none;
+}
+#edu .container{
+    border: none;
+    padding-top: 88px;
+}
+#edu .carousel {
+    display: flex;
+    border: none;
+}
+#tools i {
+    display: inline-block;
+    font-size: 70px;
+}
+#tools i:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+#tools .container {
+    border: none;
+    width: 240px;
+    left: 698px;
+    position: relative;
+    padding-top: 14px;
+}
+#languages .container{
+    width: 143px;
+    text-align: left;
+    border: none;
+    line-height: 24px;
+    left: 433px;
+    position: relative;
+}
+.container7 {
+    display: flex;
+    border: none;
+}
+#certiAchiev .container {
+    border: none;
+}
+.fa-html5:hover{
+    color: rgb(223, 76, 36);
+    transition: color 0.5s ease-in-out;
+}
+.fa-css3-alt:hover {
+    color: rgb(83, 134, 211);
+    transition: color 0.5s ease-in-out;
+}
+.fa-js:hover{
+    color: rgb(180, 185, 44);
+    transition: color 0.5s ease-in-out;
+}
+.fa-node-js:hover{
+    color: rgb(55, 135, 23);
+    transition: color 0.5s ease-in-out;
+}
+.fa-react:hover{
+    color: rgb(38, 107, 205);
+    transition: color 0.5s ease-in-out;
+}
+.fa-php:hover{
+    color: rgb(10, 62, 135);
+    transition: color 0.5s ease-in-out;
+}
+.fa-database:hover{
+    color: rgb(213, 116, 26);
+    transition: color 0.5s ease-in-out;
+}
+.fa-git-alt:hover{
+    color: rgb(210, 62, 21);
+    transition: color 0.5s ease-in-out;
+}
+.fa-python:hover{
+    color: rgb(204, 191, 70);
+    transition: color 0.5s ease-in-out;
+}
+.fa-java:hover{
+    color: rgb(87, 55, 55);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-c-plain:hover{
+    color: rgb(38, 107, 205);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-cplusplus-plain:hover{
+    color: rgb(38, 107, 205);
+    transition: color 0.5s ease-in-out;
+}
+.fa-file-word:hover{
+    color: rgb(38, 107, 205);
+    transition: color 0.5s ease-in-out;
+}
+.fa-file-excel:hover{
+    color: rgb(55, 135, 23);
+    transition: color 0.5s ease-in-out;
+}
+.fa-file-powerpoint:hover{
+    color: rgb(210, 62, 21);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-canva-original:hover{
+    color: rgb(56, 123, 215);
+    transition: color 0.5s ease-in-out;
+}
+.fa-file-pdf:hover{
+    color: rgb(220, 36, 36);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-chrome-plain:hover{
+    color: rgb(34, 137, 27);
+    transition: color 0.5s ease-in-out;
+}
+.fa-envelope:hover{
+    color: rgb(209, 193, 55);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-vscode-plain:hover{
+    color: rgb(56, 123, 215);
+    transition: color 0.5s ease-in-out;
+}
+.devicon-linkedin-plain:hover{
+    color: rgb(28, 65, 117) !important;
+    transition: color 0.5s ease-in-out;
+}
+.devicon-facebook-plain:hover{
+    color: rgb(20, 97, 205) !important;
+    transition: color 0.5s ease-in-out;
+}
+.fa-whatsapp-square:hover{
+    color: rgb(22, 181, 65) !important;
+    transition: color 0.5s ease-in-out;
 }
