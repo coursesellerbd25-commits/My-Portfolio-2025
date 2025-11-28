@@ -6,11 +6,17 @@ body {
     text-align: center;
 }
 nav {
-    background-color: #837777;
+    background: rgba(139, 106, 106, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: #ffffff00;
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 nav a {
     color: white;
@@ -496,4 +502,3 @@ header .btn {
     color: rgb(22, 181, 65) !important;
     transition: color 0.5s ease-in-out;
 }
-
