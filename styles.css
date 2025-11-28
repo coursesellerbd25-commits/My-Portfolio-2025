@@ -185,6 +185,7 @@ header .btn {
     padding: 17px 22px;
     cursor: pointer;
     border-radius: 50%;
+    border: none;
 }
 .prev-btn {
     left: 10px;
@@ -279,9 +280,105 @@ header .btn {
 }
 #edu .container{
     padding-top: 88px;
+    width: 1541px;
 }
 #edu .carousel {
     display: flex;
+}
+.edu-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1413px;
+    margin: 32px;
+    padding: 0 128px 0 109px;
+}
+.edu-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.edu-slide {
+    min-height: 100%;
+    flex-shrink: 0;
+    display: flex;
+}
+.edu-slide img {
+    width: 100%;
+    max-width: 621px;
+    border-radius: 80px;
+}
+.edu-slide img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.edu-prev, .edu-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.edu-prev {
+    left: 10px;
+}
+.edu-next {
+    right: 10px;
+}
+#certiAchiev .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 1792px;
+    margin: auto;
+}
+#certiAchiev .carousel-track{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+.cerSlide {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: contents;
+    align-items: center;
+}
+.cerSlide img {
+    max-width: 100%;
+    max-height: 223px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.cerSlide img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.cerPrev, .cerNext {
+    bottom: 146px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 10;
+    border-radius: 10px;
+}
+.cerPrev:hover, .cerNext:hover {
+    color: rgb(179, 170, 170);
+    transition: color 0.5s ease-in-out;
+}
+.cerPrev {
+    left: -329px;
+    position: relative;
+}
+.cerNext {
+    right: -325px;
+    position: relative;
 }
 #tools i {
     display: inline-block;
