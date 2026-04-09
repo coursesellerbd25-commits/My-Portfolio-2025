@@ -519,57 +519,271 @@ header .btn {
     color: rgb(22, 181, 65) !important;
     transition: color 0.5s ease-in-out;
 }
-/*For my device*/
-@media screen and (min-width: 403px) and (min-height: 867px)  {
+/* Mobile Responsive Styles - Only applies to screens < 768px */
+@media screen and (max-width: 767px) {
+    /* Navigation */
     nav {
-        width: 25%;
+        padding: 8px 10px;
+        gap: 5px;
+        font-size: 14px;
     }
+    
+    nav a {
+        margin: 0 8px;
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    /* Header */
+    .container8 {
+        padding-top: 250px !important;
+    }
+
     header {
-        width: 100%;
+        padding: 50px 0 !important;
     }
-    #skills {
-        overflow: hidden;
+
+    .container0 {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px;
+        height: auto;
     }
+
+    header img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .header-text {
+        text-align: center !important;
+    }
+
+    .header-text h1 {
+        font-size: 28px !important;
+    }
+
+    /* Containers */
+    .container {
+        width: 95% !important;
+        padding: 0 10px !important;
+    }
+
+    /* About Carousel */
+    #about {
+        height: auto !important;
+        padding: 20px !important;
+    }
+
+    /* Skills Section - Stack everything vertically */
+    .container3, .container5, .container7 {
+        flex-direction: column !important;
+    }
+
     #why-me .container {
-        left: 0px;
-        position: relative;
-        top: 34px;
-        line-height: 41px;
+        left: 0 !important;
+        position: static !important;
+        top: 0 !important;
+        text-align: center !important;
+        line-height: 1.6 !important;
+        margin-bottom: 30px;
+    }
+
+    #code .container2 {
+        right: 0 !important;
+        position: static !important;
+        width: 100% !important;
+        margin: 20px 0;
+    }
+
+    #code .container {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    #code i {
+        font-size: 50px !important;
+    }
+
+    #tech .container {
+        width: 100% !important;
+        left: 0 !important;
+        position: static !important;
+        padding-top: 20px !important;
+    }
+
+    #tech .container4 {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    #tech i {
+        font-size: 50px !important;
+    }
+
+    #soft-skills {
+        left: 0 !important;
+        position: static !important;
+        margin: 20px 0;
+    }
+
+    #soft-skills .container {
+        width: 100% !important;
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+    }
+
+    #languages .container {
+        width: 100% !important;
+        left: 0 !important;
+        position: static !important;
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+
+    #tools .container {
+        width: 100% !important;
+        left: 0 !important;
+        position: static !important;
+        padding-top: 20px !important;
+    }
+
+    /* Contact Form */
+    #contact button {
+        margin: 10px auto !important;
+        display: block !important;
+        width: 200px !important;
+    }
+
+    #connect .container {
+        left: 0 !important;
+        position: static !important;
+        width: 100% !important;
+    }
+
+    #download-cv .container {
+        right: 0 !important;
+        position: static !important;
+        width: 100% !important;
+        bottom: 0 !important;
+        margin: 20px 0;
+    }
+
+    /* Projects */
+    #projects .container {
+        padding: 40px 0 !important;
+    }
+
+    /* Education */
+    #edu .container {
+        width: 95% !important;
+        padding-top: 40px !important;
+    }
+
+    .edu-carousel {
+        max-width: 100% !important;
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+
+    .edu-slide img {
+        max-width: 100% !important;
+        border-radius: 20px !important;
+    }
+
+    /* Certificates */
+    #certiAchiev .carousel-wrapper {
+        max-width: 100% !important;
+    }
+
+    .cerPrev {
+        left: 10px !important;
+        position: absolute !important;
+    }
+
+    .cerNext {
+        right: 10px !important;
+        position: absolute !important;
+    }
+
+    .cerSlide img {
+        max-height: 180px !important;
+    }
+
+    /* Buttons */
+    .btn {
+        display: block !important;
+        margin: 10px auto !important;
+        width: 200px !important;
+        text-align: center;
+    }
+
+    /* Icons */
+    #connect .container i,
+    #tools i {
+        font-size: 50px !important;
+    }
+
+    /* General improvements */
+    h2 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    ul {
+        text-align: left !important;
+        padding-left: 20px !important;
+    }
+
+    /* Carousel buttons */
+    .prev-btn, .next-btn {
+        padding: 10px 12px !important;
+    }
+
+    .prev-btn i, .next-btn i {
+        font-size: 20px !important;
+    }
+
+    /* Form inputs */
+    #contact input, #contact textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        font-size: 16px !important; /* Prevents zoom on iOS */
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 0 !important;
     }
 }
-/*Small devices*/
-@media screen and (min-width: 600px) {
-    nav {
-        width: 25%;
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+    header img {
+        width: 150px !important;
+        height: 150px !important;
     }
-    header {
-        width: 100%;
+
+    .header-text h1 {
+        font-size: 24px !important;
     }
-}
-/*Medium devices*/
-@media screen and (min-width: 768px) {
-    nav {
-        width: 25%;
+
+    #code i, #tech i, #connect .container i, #tools i {
+        font-size: 40px !important;
     }
-    header {
-        width: 100%;
+
+    h2 {
+        font-size: 20px !important;
     }
-}
-/*Large devices*/
-@media screen and (min-width: 992px) {
-    nav {
-        width: 25%;
-    }
-    header {
-        width: 100%;
-    }
-}
-/*Extra large devices*/
-@media screen and (min-width: 1200px) {
-    nav {
-        width: 25%;
-    }
-    header {
-        width: 100%;
+
+    #soft-skills .container {
+        font-size: 16px !important;
     }
 }
