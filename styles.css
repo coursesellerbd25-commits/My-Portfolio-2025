@@ -527,6 +527,15 @@ header .btn {
     header {
         width: 100%;
     }
+    #skills {
+        overflow: hidden;
+    }
+    #why-me .container {
+        left: 0px;
+        position: relative;
+        top: 34px;
+        line-height: 41px;
+    }
 }
 /*Small devices*/
 @media screen and (min-width: 600px) {
