@@ -9,10 +9,9 @@ nav {
     background: rgba(139, 106, 106, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: #ffffff00;
     padding: 10px 0;
     position: fixed;
-    width: 100%;
+    white-space: nowrap;
     top: 0;
     left: 0;
     width: 100%;
