@@ -17,12 +17,23 @@ nav {
     left: 0;
     width: 100%;
     z-index: 9999;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+nav::-webkit-scrollbar {
+    display: none;
 }
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    flex: 0 0 auto;
+    padding: 8px 12px;
 }
 nav a:hover {
     text-decoration: underline;
