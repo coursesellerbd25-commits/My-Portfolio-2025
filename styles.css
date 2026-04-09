@@ -19,6 +19,8 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x;
     gap: 0px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -28,11 +30,12 @@ nav::-webkit-scrollbar {
 }
 nav a {
     color: white;
+    display: inline-block;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     flex: 0 0 auto;
-    padding: 8px 12px;
+    /*padding: 8px 12px;*/
     white-space: nowrap;
 }
 nav a:hover {
