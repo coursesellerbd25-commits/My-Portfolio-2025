@@ -91,37 +91,43 @@ if (eduNext && eduPrev && eduTrack) {
 }
 //Certificate & Achievement
 document.addEventListener('DOMContentLoaded', () => {
-const CerTrack = document.querySelector('#certiAchiev .carousel-track');
-const CerNext = document.querySelector('#certiAchiev .cerNext');
-const CerPrev = document.querySelector('#certiAchiev .cerPrev');
+    const CerTrack = document.querySelector('#certiAchiev .carousel-track');
+    const CerSlides = document.querySelectorAll('#certiAchiev .cerSlide');
+    const CerNext = document.querySelector('#certiAchiev .cerNext');
+    const CerPrev = document.querySelector('#certiAchiev .cerPrev');
 
-const maxSlides = 3;
+    const maxSlides = CerSlides.length; // Use actual number of slides
 
-let CerIndex = 0;
+    let CerIndex = 0;
 
-function updateCerCarousel() {
-    CerTrack.style.transform = `translateX( -${CerIndex * 100}% )`;
-}
-
-updateCerCarousel();
-
-CerNext.addEventListener('click', () => {
-    if (CerIndex < maxSlides - 1) {
-        CerIndex++;
-    } else {
-        CerIndex = 0;
+    function updateCerCarousel() {
+        if (CerTrack) {
+            CerTrack.style.transform = `translateX(-${CerIndex * 100}%)`;
+        }
     }
-    updateCerCarousel();
-});
 
-CerPrev.addEventListener('click', () => {
-    if(CerIndex > 0) {
-        CerIndex--;
-    } else {
-        CerIndex = maxSlides - 1;
+// Initialize
+    updateCerCarousel();
+
+if (CerNext && CerPrev && CerTrack) {
+        CerNext.addEventListener('click', () => {
+            if (CerIndex < maxSlides - 1) {
+                CerIndex++;
+            } else {
+                CerIndex = 0;
+            }
+            updateCerCarousel();
+        });
+
+        CerPrev.addEventListener('click', () => {
+            if (CerIndex > 0) {
+                CerIndex--;
+            } else {
+                CerIndex = maxSlides - 1;
+            }
+            updateCerCarousel();
+        });
     }
-    updateCerCarousel();
-});
-window.addEventListener('resize', updateCerCarousel);
-});
 
+    window.addEventListener('resize', updateCerCarousel);
+});
