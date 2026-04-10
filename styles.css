@@ -734,11 +734,10 @@ header .btn {
     }
 
     .edu-prev, .edu-next {
-        display: block !important; /* Uncommented and styled */
         position: absolute !important;
         top: 50% !important;
         transform: translateY(-50%) !important;
-        background: rgba(0,0,0,0.8) !important;
+        background: rgba(63, 63, 63, 0.432) !important;
         color: white !important;
         border: none !important;
         padding: 12px 16px !important;
@@ -752,14 +751,15 @@ header .btn {
         align-items: center !important;
         justify-content: center !important;
         transition: all 0.3s ease !important;
+        box-sizing: border-box !important;
     }
 
     .edu-prev {
-        left: 10px !important;
+        left: 5px !important;  /* FIXED: Proper positioning */
     }
 
     .edu-next {
-        right: 10px !important;
+        right: 5px !important; /* FIXED: Proper positioning */
     }
 
     .edu-prev:hover, .edu-next:hover {
@@ -777,14 +777,6 @@ header .btn {
     }
 
     #certiAchiev .carousel-wrapper {
-        max-width: 100% !important;
-    }
-
-    #certiAchiev h2 {
-        margin-bottom: 30px !important;
-    }
-
-    #certiAchiev .carousel-wrapper {
         position: relative !important;
         overflow: hidden !important;
         max-width: 100% !important;
@@ -795,6 +787,10 @@ header .btn {
         box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         background: linear-gradient(145deg, #f8f9fa, #e9ecef);
         padding: 20px;
+    }
+
+    #certiAchiev h2 {
+        margin-bottom: 30px !important;
     }
 
     #certiAchiev .carousel-track {
@@ -808,7 +804,7 @@ header .btn {
         min-width: 100% !important;
         flex-shrink: 0 !important;
         height: 100% !important;
-        display: flex !important;
+        display: flex !important;  /* CHANGED: flex instead of contents */
         align-items: center !important;
         justify-content: center !important;
     }
@@ -850,14 +846,15 @@ header .btn {
         justify-content: center !important;
         transition: all 0.3s ease !important;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+        box-sizing: border-box !important;
     }
 
     .cerPrev {
-        left: 15px !important;
+        left: 10px !important;  /* FIXED: Proper positioning */
     }
 
     .cerNext {
-        right: 15px !important;
+        right: 10px !important; /* FIXED: Proper positioning */
     }
 
     .cerPrev:hover, .cerNext:hover {
@@ -917,7 +914,6 @@ header .btn {
         padding: 20px 0 !important;
     }
 }
-
 /* Extra small mobile devices */
 @media screen and (max-width: 480px) {
     header img {
