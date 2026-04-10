@@ -56,36 +56,39 @@ prevBtn.addEventListener('click', () => {
 window.addEventListener('resize', updateCarousel);
 
 //Education
-/*const EduTrack = document.querySelector('#edu .edu-track');
-const EduSlides = document.querySelectorAll('.edu-slide');
-const EduNext = document.querySelector('.edu-next');
-const EduPrev = document.querySelector('.edu-prev');
+const eduTrack = document.querySelector('.edu-track');
+const eduSlides = document.querySelectorAll('.edu-slide');
+const eduNext = document.querySelector('.edu-next');
+const eduPrev = document.querySelector('.edu-prev');
 
-let EduIndex = 0;
+let eduIndex = 0;
 
 function updateEduCarousel() {
-    EduTrack.style.transform = `translateX(-${EduIndex * 100}%)`;
+    const slideWidth = eduSlides[0].offsetWidth;
+    eduTrack.style.transform = `translateX(-${eduIndex * 100}%)`;
 }
 
-EduNext.addEventListener('click', () => {
-    if (EduIndex < EduSlides.length - 1) {
-        EduIndex++;
-    } else {
-        EduIndex = 0;
-    }
+if (eduNext && eduPrev && eduTrack) {
+    eduNext.addEventListener('click', () => {
+        if (eduIndex < eduSlides.length - 1) {
+            eduIndex++;
+        } else {
+            eduIndex = 0;
+        }
         updateEduCarousel();
-});
+    });
 
-EduPrev.addEventListener('click', () => {
-    if (EduIndex > 0) {
-        EduIndex--;
-    } else {
-        EduIndex = EduSlides.length - 1;
-    }
+    eduPrev.addEventListener('click', () => {
+        if (eduIndex > 0) {
+            eduIndex--;
+        } else {
+            eduIndex = eduSlides.length - 1;
+        }
         updateEduCarousel();
-});
-window.addEventListener('resize', updateEduCarousel);*/
+    });
 
+    window.addEventListener('resize', updateEduCarousel);
+}
 //Certificate & Achievement
 document.addEventListener('DOMContentLoaded', () => {
 const CerTrack = document.querySelector('#certiAchiev .carousel-track');
