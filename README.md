@@ -6,9 +6,9 @@ A responsive personal portfolio website built with HTML, CSS and JavaScript to s
 
 ## Live Demo
 
-Portfolio Website: 
+Portfolio Website: https://coursesellerbd25-commits.github.io/My-Portfolio-2025/
 
-GitHub Repository:
+GitHub Repository: https://github.com/coursesellerbd25-commits/My-Portfolio-2025
 
 ---
 
@@ -24,4 +24,121 @@ The website focuses on:
 - Smooth user experience
 - Recruiter-friendly structure
 
-It highlights my journey as a Full-Stack Web Developer working with modern web technologies
+It highlights my journey as a Full-Stack Web Developer working with modern web technologies including React, Next.js, Node.js, MongoDB, PHP, and MySQL.
+
+---
+
+## Features
+
+- Fully responsive layout
+- Developer-focused portfolio design
+- Recruiter-friendly project showcase
+- Smooth navigation and carousel sections
+- Technical skills presentation
+- Project showcase with live/demo links
+- Downloadable CV integration
+- Social and professional contact links
+
+---
+
+## Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Libraries & Tools 
+- Font Awesome
+- Devicon
+- Flaticon Icons
+
+### Deployment
+- GitHub Pages
+
+---
+
+## Screenshots
+
+### Desktop Mode
+
+```md
+/screenshots/desktop.png
+```
+
+### Mobile Responsive View
+
+```md
+/screenshots/mobile.png
+```
+
+---
+
+## Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/coursesellerbd25-commits/My-Portfolio-2025.git
+```
+
+Move into the project directory:
+
+```bash
+cd My-Portfolio-2025
+```
+
+Open the project:
+
+```bash
+Open index.html in browser
+```
+
+---
+
+## Project Structure
+
+```bash
+My-Portfolio-2025
+
+index.html
+styles.css
+script.js
+assets/
+screenshots/
+Me.jpg
+SultanaJahanTahmina_CV (1).pdf
+README.md
+```
+
+---
+
+## Challenges Faced
+
+One of the main challenges was organizing a large amount of portfolio content while maintaining a clean and responsive user interface using only vanilla frontend technologies.
+
+Additional challenges included:
+
+- Creating reusable UI layouts without frameworks
+- Maintaining responsiveness across devices
+- Structuring project sections clearly
+- Implementing carousel-based navigation
+- Optimizing spacing and visual hierarchy
+
+---
+
+## What I Learnt
+
+Through this project, I improved my understanding of:
+
+- Semantic HTML structure
+- Responsive CSS layouts
+- JavaScript DOM manipulation
+- Frontend UI organization
+- Portfolio presentation strategy
+- Accessibility and navigation structure
+- Mobile-first responsive design principles
+
+---
+
+
