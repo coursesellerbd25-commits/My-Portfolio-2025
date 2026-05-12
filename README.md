@@ -4,15 +4,15 @@ A responsive personal portfolio website built with HTML, CSS and JavaScript to s
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 
-Portfolio Website: https://coursesellerbd25-commits.github.io/My-Portfolio-2025/
+🔗 Portfolio Website: https://coursesellerbd25-commits.github.io/My-Portfolio-2025/
 
-GitHub Repository: https://github.com/coursesellerbd25-commits/My-Portfolio-2025
+🔗 GitHub Repository: https://github.com/coursesellerbd25-commits/My-Portfolio-2025
 
 ---
 
-## Overview
+## 📌 Overview
 
 This portfolio website was designed and developed to present my technical background, projects, experience and developer profile in a clean and professional format.
 
@@ -28,7 +28,7 @@ It highlights my journey as a Full-Stack Web Developer working with modern web t
 
 ---
 
-## Features
+## ✨ Features
 
 - Fully responsive layout
 - Developer-focused portfolio design
@@ -41,7 +41,7 @@ It highlights my journey as a Full-Stack Web Developer working with modern web t
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 - HTML5
@@ -58,15 +58,15 @@ It highlights my journey as a Full-Stack Web Developer working with modern web t
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-### Desktop Mode
+### 💻 Desktop Mode
 
 ```md
 /screenshots/desktop.png
 ```
 
-### Mobile Responsive View
+### 📱 Mobile Responsive View
 
 ```md
 /screenshots/mobile.png
@@ -74,7 +74,7 @@ It highlights my journey as a Full-Stack Web Developer working with modern web t
 
 ---
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
 Clone the repository:
 
@@ -96,24 +96,24 @@ Open index.html in browser
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```bash
 My-Portfolio-2025
-
-index.html
-styles.css
-script.js
-assets/
-screenshots/
-Me.jpg
-SultanaJahanTahmina_CV (1).pdf
-README.md
+│
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+├── screenshots/
+├── Me.jpg
+├── SultanaJahanTahmina_CV (1).pdf
+└── README.md
 ```
 
 ---
 
-## Challenges Faced
+## 🧩 Challenges Faced
 
 One of the main challenges was organizing a large amount of portfolio content while maintaining a clean and responsive user interface using only vanilla frontend technologies.
 
@@ -127,7 +127,7 @@ Additional challenges included:
 
 ---
 
-## What I Learnt
+## 📈 What I Learnt
 
 Through this project, I improved my understanding of:
 
@@ -141,4 +141,39 @@ Through this project, I improved my understanding of:
 
 ---
 
+## 🔮 Future Improvements
 
+- Migrate portfolio to Next.js
+- Add dark/light mode toggle
+- Integrate backend contact form
+- Improve animations and transitions
+- Add project filtering system
+- Improve accessibility support
+
+---
+
+## 👨‍💻 About Me
+
+I am a Full-Stack Web Developer focused on building scalable and responsive web applications using modern JavaScript technologies including:
+
+- React.js
+- Next.js
+- Node.js
+- Express.js
+- MongoDB
+- MySQL
+
+I am also improving my problem-solving and software engineering fundamentals through Data Structures & Algorithms using C++.
+
+---
+
+## 🔗 Contact With Me
+
+- GitHub: https://github.com/coursesellerbd25-commits
+- LinkedIn: https://www.linkedin.com/in/sultana-jahan-tahmina-621aa2243
+- Email: sultanajahantahmina19@gmail.com
+
+---
+
+## ⭐ Support 
+If you like this project, consider giving it a star ⭐ on GitHub.
