@@ -322,11 +322,16 @@ header .btn {
     line-height: 29px;
     font-size: 24px;
 }
-
 #connect .container {
-    left: 179px;
-    position: relative;
-    width: 297px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 #download-cv .container {
     position: static;
@@ -719,7 +724,10 @@ header .btn {
         position: static !important;
         width: 100% !important;
     }
-
+    #connect .container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
     #download-cv .container {
         right: 0 !important;
         position: static !important;
