@@ -200,13 +200,37 @@ header .btn {
     transition: transform 0.5s ease-in-out;
 }
 .project {
-    min-width: 100%;
-    flex-shrink: 1;
+    min-width: calc(100% - 20px);
+    flex-shrink: 0;
     padding: 20px;
     box-sizing: border-box;
+
+    background: #f8f8f8;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.project:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.project h3 {
+    margin-bottom: 15px;
+    color: #111;
+    font-size: 28px;
+}
+.project p {
+    line-height: 1.8;
+    color: #555;
 }
 #projects .container {
     padding: 97px 0 97px 0;
+}
+.carousel-track {
+    gap: 20px;
 }
 .prev-btn, .next-btn {
     position: absolute;
@@ -740,6 +764,22 @@ header .btn {
     /* Projects */
     #projects .container {
         padding: 40px 0 !important;
+    }
+    #projects {
+        position: relative;
+    }
+    #projects .prev-btn,
+    #projects .next-btn {
+        top: 50%;
+        z-index: 20;
+    }
+    .project h3 {
+        font-size: 22px !important;
+    }
+
+    .project p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
     }
     
     /* Education */
