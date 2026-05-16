@@ -177,9 +177,8 @@ header .btn {
     text-align: left;
 }
 #why-me .container {
-    left: 139px;
-    position: relative;
-    top: 34px;
+    position: static;
+    margin: auto;
     line-height: 41px;
 }
 .carousel-wrapper {
@@ -247,9 +246,9 @@ header .btn {
     padding: 0px;
 }
 #tech .container {
-    width: 628px;
-    left: 160px;
-    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
     padding-top: 28px;
 }
 #tech .container i{
@@ -269,8 +268,8 @@ header .btn {
     display: flex;
 }
 #soft-skills {
-    left: 316px;
-    position: relative;
+    margin: auto;
+    position: static;
 }
 #soft-skills .container {
     width: 317px;
@@ -285,10 +284,9 @@ header .btn {
     width: 297px;
 }
 #download-cv .container {
-    right: 496px;
-    position: relative;
-    width: 197px;
-    bottom: 147px;
+    position: static;
+    width: 100%;
+    margin-top: 20px;
 }
 #connect .container a{
     display: inline-block;
@@ -301,9 +299,23 @@ header .btn {
 #connect a:hover {
     transform: scale(1.2);
 }
+#contact.container a {
+    display: inline-block;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+#contact .container i {
+    font-size: 100px;
+    color: black;
+}
+#contact .container a:hover {
+    transform: scale(1.2);
+}
 #edu .container{
     padding-top: 88px;
-    width: 1541px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 #edu .carousel {
     display: flex;
@@ -412,17 +424,16 @@ header .btn {
     transition: transform 0.5s ease-in-out;
 }
 #tools .container {
-    width: 240px;
-    left: 698px;
-    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
     padding-top: 14px;
 }
 #languages .container{
-    width: 143px;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     line-height: 24px;
-    left: 433px;
-    position: relative;
+    margin: auto;
 }
 .container7 {
     display: flex;
