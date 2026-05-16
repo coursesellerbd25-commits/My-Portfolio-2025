@@ -244,7 +244,7 @@ header .btn {
     margin-bottom: 20px;
     color: #222;
 }
-#experience .project {
+#experience .experience-card {
     background: #f8f8f8;
     border-radius: 16px;
     padding: 35px;
@@ -252,21 +252,21 @@ header .btn {
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
 }
-#experience .project:hover {
+#experience .experience-card:hover {
     transform: translateY(-5px);
 }
-#experience .project h3 {
+#experience .experience-card h3 {
     margin-bottom: 20px;
     color: #111;
 }
-#experience .project a {
+#experience .experience-card a {
     font-size: 28px;
     margin-right: 15px;
     color: black;
     display: inline-block;
     margin-top: 10px;
 }
-#experience .project a:hover {
+#experience .experience-card a:hover {
     transform: scale(1.15);
     transition: 0.3s ease;
 }
