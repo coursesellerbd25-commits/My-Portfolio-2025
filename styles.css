@@ -65,16 +65,16 @@ footer {
     overflow: hidden;
     position: relative;
 }
-header {
-    width: 100%;
-}
 header img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
 }
-div {
+.project,
+.experience-card,
+.container,
+.container0 {
     margin: 20px 0;
 }
 .container8 {
@@ -157,8 +157,10 @@ div {
     background-color: #555;
 }
 header {
+    width: 100%;
     background-color: #f4f4f4;
     padding: 100px 0;
+    margin: 0;
 }
 .header-text {
     text-align: left;
