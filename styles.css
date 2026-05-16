@@ -324,6 +324,11 @@ header .btn {
     line-height: 29px;
     font-size: 24px;
 }
+#getConnected {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 #connect .container {
     display: flex;
     justify-content: center;
@@ -337,6 +342,9 @@ header .btn {
     width: 100%;
     margin-top: 20px;
 }
+#contact .container {
+    text-align: center;
+}
 #connect .container a{
     display: inline-block;
     transition: transform 0.5s ease-in-out;
@@ -348,7 +356,7 @@ header .btn {
 #connect a:hover {
     transform: scale(1.2);
 }
-#contact.container a {
+#contact .container a {
     display: inline-block;
     margin: 15px;
     transition: transform 0.3s ease;
