@@ -67,10 +67,12 @@ footer {
     bottom: 0;
 }
 .container {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
     position: relative;
+    padding: 0 20px;
 }
 header img {
     width: 250px;
@@ -323,15 +325,12 @@ header .btn {
     font-size: 24px;
 }
 #connect .container {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    position: static;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
+    text-align: center;
 }
 #download-cv .container {
     position: static;
@@ -717,12 +716,6 @@ header .btn {
         margin: 10px auto !important;
         display: block !important;
         width: 200px !important;
-    }
-
-    #connect .container {
-        left: 0 !important;
-        position: static !important;
-        width: 100% !important;
     }
     #connect .container {
         flex-direction: column !important;
