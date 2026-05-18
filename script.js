@@ -39,20 +39,12 @@ const prevBtn = document.querySelector('#projects .prev-btn');
 let index = 0;
 
 function updateCarousel() {
-    projectTrack.style.transform = `translateX(-${index * 100}%)`;
+    const slideWidth = slides[0].offsetWidth;
+    const gap = 20; // same as CSS gap
+
+    projectTrack.style.transform =
+        `translateX(-${index * (slideWidth + gap)}px)`;
 }
-nextBtn.addEventListener('click', () => {
-    if (index < slides.length - 1){
-        index++;
-        updateCarousel();
-    }
-});
-prevBtn.addEventListener('click', () => {
-    if(index > 0) {
-        index--;
-        updateCarousel();
-    }
-});
 window.addEventListener('resize', updateCarousel);
 
 //Education
