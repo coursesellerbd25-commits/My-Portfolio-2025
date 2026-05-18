@@ -194,13 +194,15 @@ header .btn {
 .carousel-wrapper {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .carousel-track {
     display: flex;
+    gap: 20px;
     transition: transform 0.5s ease-in-out;
 }
 .project {
-    min-width: calc(100% - 20px);
+    min-width: 100%;
     flex-shrink: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -763,7 +765,8 @@ header .btn {
 
     /* Projects */
     #projects .container {
-        padding: 40px 0 !important;
+        width: 100% !important;
+        padding: 20px 10px !important;
     }
     #projects {
         position: relative;
@@ -772,6 +775,17 @@ header .btn {
     #projects .next-btn {
         top: 50%;
         z-index: 20;
+    }
+    #projects .prev-btn {
+        left: 5px !important;
+    }
+
+    #projects .next-btn {
+        right: 5px !important;
+    }
+    .project {
+        padding: 25px 18px !important;
+        margin: 0 auto !important;
     }
     .project h3 {
         font-size: 22px !important;
