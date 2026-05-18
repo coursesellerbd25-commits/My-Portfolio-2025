@@ -39,11 +39,9 @@ const prevBtn = document.querySelector('#projects .prev-btn');
 let index = 0;
 
 function updateCarousel() {
-    const slideWidth = slides[0].offsetWidth;
-    const gap = 20; // same as CSS gap
-
+    const slideWidth = slides[0].offsetWidth + 20; // 20 = gap
     projectTrack.style.transform =
-        `translateX(-${index * (slideWidth + gap)}px)`;
+        `translateX(-${index * slideWidth}px)`;
 }
 window.addEventListener('resize', updateCarousel);
 
