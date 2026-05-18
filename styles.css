@@ -780,7 +780,7 @@ header .btn {
     }
     #projects .prev-btn,
     #projects .next-btn {
-        top: 50%;
+        top: 55%;
         z-index: 20;
     }
     #projects .prev-btn {
@@ -791,8 +791,11 @@ header .btn {
         right: 5px !important;
     }
     .project {
-        padding: 25px 18px !important;
-        margin: 0 auto !important;
+        padding: 25px 20px !important;
+    }
+
+    .carousel-track {
+        gap: 10px !important;
     }
     .project h3 {
         font-size: 22px !important;
