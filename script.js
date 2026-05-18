@@ -28,45 +28,7 @@ aboutPrev.addEventListener('click', () => {
     }
     updateAboutCarousel();
 });
-window.addEventListener('resize', updateAboutCarousel);
-
-//Projects
-const projectTrack = document.querySelector('#projects .carousel-track');
-const slides = document.querySelectorAll('#projects .project');
-const nextBtn = document.querySelector('#projects .next-btn');
-const prevBtn = document.querySelector('#projects .prev-btn');
-
-let index = 0;
-
-function updateCarousel() {
-    const slideWidth = slides[0].offsetWidth + 20; // 20px gap
-    projectTrack.style.transform =
-        `translateX(-${index * slideWidth}px)`;
-}
-
-// Next button
-nextBtn.addEventListener('click', () => {
-    if (index < slides.length - 1) {
-        index++;
-    } else {
-        index = 0;
-    }
-
-    updateCarousel();
-});
-
-// Previous button
-prevBtn.addEventListener('click', () => {
-    if (index > 0) {
-        index--;
-    } else {
-        index = slides.length - 1;
-    }
-
-    updateCarousel();
-});
-
-window.addEventListener('resize', updateCarousel);
+window.addEventListener('resize', updateAboutCarou
 
 // Initialize
 updateCarousel();
