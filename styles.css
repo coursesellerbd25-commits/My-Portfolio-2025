@@ -191,66 +191,98 @@ header .btn {
     margin: auto;
     line-height: 41px;
 }
-.carousel-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.carousel-track {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease-in-out;
-}
 .project {
-    min-width: calc(100% - 20px);
-    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
 
-    background: #f8f8f8;
-    border-radius: 18px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}.project:hover {
-    transform: translateY(-5px);
+    margin: 30px auto;
+    padding: 40px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    border-radius: 20px;
+
+    text-align: left;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+/* Dark overlay */
+.project::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.65);
+
+    z-index: 1;
+}
+/* Keep content above overlay */
+.project * {
+    position: relative;
+    z-index: 2;
+}
+.project:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 35px rgba(0,0,0,0.18);
 }
 .project h3 {
-    margin-bottom: 15px;
-    color: #111;
-    font-size: 28px;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
-.project p {
-    line-height: 1.8;
-    color: #555;
+.project p,
+.project li {
+    color: rgba(255,255,255,0.92);
+
+    line-height: 1.9;
+    font-size: 17px;
+}
+.project strong {
+    color: white;
+}
+.project ul {
+    margin-top: 15px;
+    padding-left: 22px;
 }
 #projects .container {
     padding: 97px 0 97px 0;
 }
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #1111117b;
-    color: rgb(255, 255, 255);
-    padding: 17px 22px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
+/* Buttons */
+.project-links {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-.prev-btn {
-    left: 10px;
+.project-links a {
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    background: white;
+    color: black;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
 }
-.next-btn {
-    right: 10px;
-}
-.prev-btn i, .next-btn i{
-    font-size: 37px;
-}
-.prev-btn i:hover, .next-btn i:hover{
-    color: rgb(179, 170, 170);
+.project-links a:hover {
+    transform: translateY(-2px);
+
+    background: #e9e9e9;
 }
 #code i {
     font-size: 70px;
