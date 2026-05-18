@@ -254,9 +254,27 @@ header .btn {
     margin-top: 15px;
     padding-left: 22px;
 }
-#projects .container {
-    padding: 97px 0 97px 0;
+#projects {
+    width: 100%;
 }
+#projects .container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 97px 20px;
+}
+#projects h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+
+    color: #222;
+}
+
 /* Buttons */
 .project-links {
     margin-top: 30px;
