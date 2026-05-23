@@ -62,6 +62,8 @@ It highlights my journey as a Full-Stack Web Developer working with modern web t
 
 ### 💻 Desktop Mode
 
+<img width="1920" height="916" alt="portfolio" src="https://github.com/user-attachments/assets/a50fd486-567b-461d-b9fb-cf6d5d7d0f78" />
+
 ```md
 /screenshots/desktop.png
 ```
